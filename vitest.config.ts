@@ -9,6 +9,7 @@ export default defineConfig({
     },
   },
   test: {
+    setupFiles: ['tests/unit/setup-codec.ts'],
     include: ['src/**/*.test.ts', 'tests/unit/**/*.test.ts'],
     environment: 'node',
     coverage: {
