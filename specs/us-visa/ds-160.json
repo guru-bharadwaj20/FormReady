@@ -1,0 +1,43 @@
+{
+  "$schema": "../schema.json",
+  "id": "us-visa/ds-160",
+  "portal": "US Visa",
+  "portalFullName": "United States Department of State",
+  "form": "DS-160 nonimmigrant visa photo",
+  "country": "US",
+  "category": "visa",
+  "aliases": ["us visa", "ds 160", "ds-160", "american visa photo"],
+  "sourceUrl": "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/photos.html",
+  "lastVerified": "2026-11-15",
+  "assets": [
+    {
+      "id": "photo",
+      "kind": "photo",
+      "label": "Photograph",
+      "formats": ["jpeg"],
+      "size": {
+        "maxBytes": 245760
+      },
+      "pixels": {
+        "width": 900,
+        "height": 900,
+        "tolerance": 0.34
+      },
+      "aspect": {
+        "ratio": 1,
+        "tolerance": 0.34
+      },
+      "face": {
+        "minHeightFraction": 0.5,
+        "maxHeightFraction": 0.85
+      },
+      "background": {
+        "kind": "white"
+      },
+      "notes": [
+        "Square, between 600 x 600 and 1200 x 1200 pixels, colour JPEG, taken within the last six months.",
+        "Head height between 50 and 69 percent of the image height."
+      ]
+    }
+  ]
+}

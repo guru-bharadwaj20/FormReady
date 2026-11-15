@@ -1,0 +1,88 @@
+{
+  "$schema": "../schema.json",
+  "id": "nsp/scholarship-2026",
+  "portal": "NSP",
+  "portalFullName": "National Scholarship Portal",
+  "form": "Scholarship application 2026-27",
+  "country": "IN",
+  "category": "education",
+  "aliases": ["nsp", "scholarship", "national scholarship", "post matric", "pre matric"],
+  "sourceUrl": "https://scholarships.gov.in/",
+  "lastVerified": "2026-11-15",
+  "season": "Jul-Oct",
+  "assets": [
+    {
+      "id": "photo",
+      "kind": "photo",
+      "label": "Photograph",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 10240,
+        "maxBytes": 204800
+      },
+      "pixels": {
+        "width": 276,
+        "height": 354,
+        "tolerance": 0.05
+      },
+      "physical": {
+        "widthMm": 35,
+        "heightMm": 45,
+        "dpi": 200
+      },
+      "dpi": 200,
+      "aspect": {
+        "ratio": 0.7778,
+        "tolerance": 0.05
+      },
+      "colour": "colour",
+      "face": {
+        "minHeightFraction": 0.5,
+        "maxHeightFraction": 0.85
+      },
+      "background": {
+        "kind": "light"
+      },
+      "notes": []
+    },
+    {
+      "id": "income-certificate",
+      "kind": "document",
+      "label": "Income certificate",
+      "formats": ["pdf"],
+      "size": {
+        "maxBytes": 204800
+      },
+      "pdf": {
+        "pageSize": "A4"
+      },
+      "notes": []
+    },
+    {
+      "id": "marksheet",
+      "kind": "document",
+      "label": "Previous year marksheet",
+      "formats": ["pdf"],
+      "size": {
+        "maxBytes": 204800
+      },
+      "pdf": {
+        "pageSize": "A4"
+      },
+      "notes": []
+    },
+    {
+      "id": "bank-passbook",
+      "kind": "document",
+      "label": "Bank passbook or cancelled cheque",
+      "formats": ["pdf"],
+      "size": {
+        "maxBytes": 204800
+      },
+      "pdf": {
+        "pageSize": "A4"
+      },
+      "notes": []
+    }
+  ]
+}

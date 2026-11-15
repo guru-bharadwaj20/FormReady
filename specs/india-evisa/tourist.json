@@ -1,0 +1,56 @@
+{
+  "$schema": "../schema.json",
+  "id": "india-evisa/tourist",
+  "portal": "India e-Visa",
+  "portalFullName": "Indian Visa Online (Bureau of Immigration)",
+  "form": "e-Tourist Visa",
+  "country": "IN",
+  "category": "visa",
+  "aliases": ["india evisa", "e visa india", "indian visa online", "etv"],
+  "sourceUrl": "https://indianvisaonline.gov.in/evisa/",
+  "lastVerified": "2026-11-15",
+  "assets": [
+    {
+      "id": "photo",
+      "kind": "photo",
+      "label": "Photograph",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 10240,
+        "maxBytes": 1048576
+      },
+      "pixels": {
+        "width": 600,
+        "height": 600,
+        "tolerance": 0.45
+      },
+      "aspect": {
+        "ratio": 1,
+        "tolerance": 0.45
+      },
+      "face": {
+        "minHeightFraction": 0.5,
+        "maxHeightFraction": 0.85
+      },
+      "background": {
+        "kind": "white"
+      },
+      "notes": ["Square, minimum 350 x 350 pixels, white background, full face, no glare."]
+    },
+    {
+      "id": "passport-page",
+      "kind": "document",
+      "label": "Passport bio page",
+      "formats": ["pdf"],
+      "size": {
+        "minBytes": 10240,
+        "maxBytes": 307200
+      },
+      "pdf": {
+        "maxPages": 1,
+        "pageSize": "A4"
+      },
+      "notes": []
+    }
+  ]
+}

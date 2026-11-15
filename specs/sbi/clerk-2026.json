@@ -1,0 +1,112 @@
+{
+  "$schema": "../schema.json",
+  "id": "sbi/clerk-2026",
+  "portal": "SBI",
+  "portalFullName": "State Bank of India",
+  "form": "Clerk 2026",
+  "country": "IN",
+  "category": "banking",
+  "aliases": ["sbi clerk 2026", "sbi", "bank exam"],
+  "sourceUrl": "https://sbi.co.in/web/careers",
+  "lastVerified": "2026-11-15",
+  "assets": [
+    {
+      "id": "photo",
+      "kind": "photo",
+      "label": "Photograph",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 20480,
+        "maxBytes": 51200
+      },
+      "pixels": {
+        "width": 200,
+        "height": 230,
+        "tolerance": 0.05
+      },
+      "aspect": {
+        "ratio": 0.8696,
+        "tolerance": 0.05
+      },
+      "face": {
+        "minHeightFraction": 0.5,
+        "maxHeightFraction": 0.85
+      },
+      "background": {
+        "kind": "light"
+      },
+      "notes": [
+        "Recent colour passport photo against a light background.",
+        "Dimensions 200 x 230 pixels (preferred)."
+      ]
+    },
+    {
+      "id": "signature",
+      "kind": "signature",
+      "label": "Signature",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 10240,
+        "maxBytes": 20480
+      },
+      "pixels": {
+        "width": 140,
+        "height": 60,
+        "tolerance": 0.05
+      },
+      "aspect": {
+        "ratio": 2.3333,
+        "tolerance": 0.05
+      },
+      "background": {
+        "kind": "white"
+      },
+      "notes": ["Black ink on white paper. Signatures in capital letters are rejected."]
+    },
+    {
+      "id": "left-thumb",
+      "kind": "thumb",
+      "label": "Left thumb impression",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 20480,
+        "maxBytes": 51200
+      },
+      "pixels": {
+        "width": 240,
+        "height": 240,
+        "tolerance": 0.05
+      },
+      "aspect": {
+        "ratio": 1,
+        "tolerance": 0.05
+      },
+      "background": {
+        "kind": "white"
+      },
+      "notes": ["Blue or black ink on white paper."]
+    },
+    {
+      "id": "declaration",
+      "kind": "other",
+      "label": "Handwritten declaration",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 51200,
+        "maxBytes": 102400
+      },
+      "pixels": {
+        "width": 800,
+        "height": 400,
+        "tolerance": 0.05
+      },
+      "aspect": {
+        "ratio": 2,
+        "tolerance": 0.05
+      },
+      "notes": [
+        "Write the declaration in English in your own running handwriting on white paper with black ink."
+      ]
+    }
+  ]
+}

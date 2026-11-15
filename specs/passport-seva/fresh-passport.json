@@ -1,0 +1,61 @@
+{
+  "$schema": "../schema.json",
+  "id": "passport-seva/fresh-passport",
+  "portal": "Passport Seva",
+  "portalFullName": "Passport Seva (Ministry of External Affairs)",
+  "form": "Fresh passport or reissue",
+  "country": "IN",
+  "category": "government",
+  "aliases": ["passport", "passport seva", "psk", "mea passport"],
+  "sourceUrl": "https://www.passportindia.gov.in/",
+  "lastVerified": "2026-11-15",
+  "assets": [
+    {
+      "id": "photo",
+      "kind": "photo",
+      "label": "Photograph",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 10240,
+        "maxBytes": 1048576
+      },
+      "pixels": {
+        "width": 413,
+        "height": 531,
+        "tolerance": 0.05
+      },
+      "physical": {
+        "widthMm": 35,
+        "heightMm": 45,
+        "dpi": 300
+      },
+      "dpi": 300,
+      "aspect": {
+        "ratio": 0.7778,
+        "tolerance": 0.05
+      },
+      "colour": "colour",
+      "face": {
+        "minHeightFraction": 0.5,
+        "maxHeightFraction": 0.85
+      },
+      "background": {
+        "kind": "white"
+      },
+      "notes": ["Plain white background, full face, no shadows, neutral expression."]
+    },
+    {
+      "id": "supporting-document",
+      "kind": "document",
+      "label": "Supporting document",
+      "formats": ["pdf"],
+      "size": {
+        "maxBytes": 2097152
+      },
+      "pdf": {
+        "pageSize": "A4"
+      },
+      "notes": ["One PDF per document."]
+    }
+  ]
+}

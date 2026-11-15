@@ -1,0 +1,77 @@
+{
+  "$schema": "../schema.json",
+  "id": "army/agniveer-2026",
+  "portal": "Indian Army",
+  "portalFullName": "Join Indian Army",
+  "form": "Agniveer 2026",
+  "country": "IN",
+  "category": "government",
+  "aliases": ["agniveer", "agnipath", "army rally", "join indian army"],
+  "sourceUrl": "https://joinindianarmy.nic.in/",
+  "lastVerified": "2026-11-15",
+  "assets": [
+    {
+      "id": "photo",
+      "kind": "photo",
+      "label": "Photograph",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 10240,
+        "maxBytes": 20480
+      },
+      "pixels": {
+        "width": 276,
+        "height": 354,
+        "tolerance": 0.05
+      },
+      "physical": {
+        "widthMm": 35,
+        "heightMm": 45,
+        "dpi": 200
+      },
+      "dpi": 200,
+      "aspect": {
+        "ratio": 0.7778,
+        "tolerance": 0.05
+      },
+      "colour": "colour",
+      "face": {
+        "minHeightFraction": 0.5,
+        "maxHeightFraction": 0.85
+      },
+      "background": {
+        "kind": "light"
+      },
+      "notes": ["Recent colour photo, white background, name and date placard where required."]
+    },
+    {
+      "id": "signature",
+      "kind": "signature",
+      "label": "Signature",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 5120,
+        "maxBytes": 10240
+      },
+      "pixels": {
+        "width": 276,
+        "height": 118,
+        "tolerance": 0.05
+      },
+      "physical": {
+        "widthMm": 35,
+        "heightMm": 15,
+        "dpi": 200
+      },
+      "dpi": 200,
+      "aspect": {
+        "ratio": 2.3333,
+        "tolerance": 0.05
+      },
+      "background": {
+        "kind": "white"
+      },
+      "notes": ["Sign with black or dark blue ink on plain white paper."]
+    }
+  ]
+}

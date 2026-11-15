@@ -1,0 +1,91 @@
+{
+  "$schema": "../schema.json",
+  "id": "pan/protean-49a",
+  "portal": "PAN",
+  "portalFullName": "Permanent Account Number (Protean / NSDL)",
+  "form": "Form 49A new PAN",
+  "country": "IN",
+  "category": "government",
+  "aliases": ["pan card", "nsdl pan", "protean", "form 49a", "income tax pan"],
+  "sourceUrl": "https://www.protean-tinpan.com/",
+  "lastVerified": "2026-11-15",
+  "assets": [
+    {
+      "id": "photo",
+      "kind": "photo",
+      "label": "Photograph",
+      "formats": ["jpeg"],
+      "size": {
+        "maxBytes": 20480
+      },
+      "pixels": {
+        "width": 295,
+        "height": 413,
+        "tolerance": 0.05
+      },
+      "physical": {
+        "widthMm": 25,
+        "heightMm": 35,
+        "dpi": 300
+      },
+      "dpi": 300,
+      "aspect": {
+        "ratio": 0.7143,
+        "tolerance": 0.05
+      },
+      "colour": "colour",
+      "face": {
+        "minHeightFraction": 0.5,
+        "maxHeightFraction": 0.85
+      },
+      "background": {
+        "kind": "white"
+      },
+      "notes": ["Colour photo, 300 DPI, 3.5 cm high and 2.5 cm wide."]
+    },
+    {
+      "id": "signature",
+      "kind": "signature",
+      "label": "Signature",
+      "formats": ["jpeg"],
+      "size": {
+        "maxBytes": 10240
+      },
+      "pixels": {
+        "width": 531,
+        "height": 236,
+        "tolerance": 0.05
+      },
+      "physical": {
+        "widthMm": 45,
+        "heightMm": 20,
+        "dpi": 300
+      },
+      "dpi": 300,
+      "aspect": {
+        "ratio": 2.25,
+        "tolerance": 0.05
+      },
+      "background": {
+        "kind": "white"
+      },
+      "notes": [
+        "Sign with black or dark blue ink on plain white paper.",
+        "300 DPI, 2 cm high and 4.5 cm wide."
+      ]
+    },
+    {
+      "id": "supporting-document",
+      "kind": "document",
+      "label": "Proof of identity, address or date of birth",
+      "formats": ["pdf"],
+      "size": {
+        "maxBytes": 307200
+      },
+      "pdf": {
+        "pageSize": "A4"
+      },
+      "notes": ["Scan at 200 DPI, colour."]
+    }
+  ]
+}
