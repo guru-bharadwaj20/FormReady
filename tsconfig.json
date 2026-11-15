@@ -23,5 +23,12 @@
       "$specs/*": ["specs/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.js", "src/**/*.svelte", "specs/**/*.json", "scripts/**/*.ts", "tests/**/*.ts"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.js",
+    "src/**/*.svelte",
+    "specs/**/*.json",
+    "scripts/**/*.ts",
+    "tests/**/*.ts"
+  ]
 }

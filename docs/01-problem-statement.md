@@ -26,7 +26,7 @@ pools alone run into the crores.
 - WhatsApp forwards describing MS Paint tricks that rarely land in the KB range.
 - A cyber cafe counter charging Rs 30 to Rs 100, with a queue on deadline day.
 
-None of these tell the applicant *why* the portal rejected the file, none work
+None of these tell the applicant _why_ the portal rejected the file, none work
 offline, and none keep the data on the device.
 
 ## The gap

@@ -24,19 +24,19 @@ Output is downloaded to the device. Nothing is uploaded, ever.
 
 ## Module map
 
-| Path                      | Responsibility                                     | Runs in       |
-| ------------------------- | -------------------------------------------------- | ------------- |
-| `specs/**/*.json`         | Portal specification registry (data, not code)     | build time    |
-| `specs/schema.json`       | JSON Schema every spec must satisfy                | CI            |
-| `src/lib/specs/`          | Typed loader, search index, spec helpers           | main thread   |
-| `src/lib/validate/`       | Pure validation rules and report model             | main + worker |
-| `src/lib/image/`          | Pure pixel ops on `RawImage`, JFIF writer, KB search | worker      |
-| `src/lib/codec/`          | Encoder/decoder adapters (mozjpeg WASM, canvas)    | worker        |
-| `src/lib/face/`           | Face framing and background heuristics             | main thread   |
-| `src/lib/pdf/`            | Compress, merge, split                             | worker        |
-| `src/workers/`            | Worker entry points and typed message protocol     | worker        |
-| `src/lib/i18n/`           | String tables and locale selection                 | main thread   |
-| `src/ui/`                 | Svelte components                                  | main thread   |
+| Path                | Responsibility                                       | Runs in       |
+| ------------------- | ---------------------------------------------------- | ------------- |
+| `specs/**/*.json`   | Portal specification registry (data, not code)       | build time    |
+| `specs/schema.json` | JSON Schema every spec must satisfy                  | CI            |
+| `src/lib/specs/`    | Typed loader, search index, spec helpers             | main thread   |
+| `src/lib/validate/` | Pure validation rules and report model               | main + worker |
+| `src/lib/image/`    | Pure pixel ops on `RawImage`, JFIF writer, KB search | worker        |
+| `src/lib/codec/`    | Encoder/decoder adapters (mozjpeg WASM, canvas)      | worker        |
+| `src/lib/face/`     | Face framing and background heuristics               | main thread   |
+| `src/lib/pdf/`      | Compress, merge, split                               | worker        |
+| `src/workers/`      | Worker entry points and typed message protocol       | worker        |
+| `src/lib/i18n/`     | String tables and locale selection                   | main thread   |
+| `src/ui/`           | Svelte components                                    | main thread   |
 
 ## Data flow for the photo path
 
@@ -49,7 +49,7 @@ Output is downloaded to the device. Nothing is uploaded, ever.
    colour mode) back. The validator produces the "before" report.
 4. The applicant clicks Fix. The worker runs the pipeline:
    `crop/resize -> colour mode -> encode with KB search -> write DPI tag ->
-   strip metadata`.
+strip metadata`.
 5. The worker returns the output bytes plus the new `FileFacts`. The
    validator produces the "after" report; face/background checks run on the
    main thread if the spec asks for them.
