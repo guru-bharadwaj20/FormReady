@@ -23,7 +23,8 @@
     "test": "vitest run --passWithNoTests",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "specs:validate": "tsx scripts/validate-specs.ts"
+    "specs:validate": "tsx scripts/validate-specs.ts",
+    "i18n:check": "tsx scripts/i18n-check.ts"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.5",
