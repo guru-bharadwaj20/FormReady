@@ -6,6 +6,7 @@ export default defineConfig({
     alias: {
       $lib: fileURLToPath(new URL('./src/lib', import.meta.url)),
       $specs: fileURLToPath(new URL('./specs', import.meta.url)),
+      $workers: fileURLToPath(new URL('./src/workers', import.meta.url)),
     },
   },
   test: {

@@ -20,7 +20,8 @@
     "paths": {
       "$lib/*": ["src/lib/*"],
       "$ui/*": ["src/ui/*"],
-      "$specs/*": ["specs/*"]
+      "$specs/*": ["specs/*"],
+      "$workers/*": ["src/workers/*"]
     }
   },
   "include": [
