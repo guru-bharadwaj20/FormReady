@@ -1,0 +1,29 @@
+name: Spec change report
+description: A portal changed its upload rules or a spec in the registry is wrong
+labels: [spec]
+body:
+  - type: input
+    id: spec
+    attributes:
+      label: Spec id
+      description: Shown on the portal page in the app, e.g. ssc/cgl-2026
+    validations:
+      required: true
+  - type: input
+    id: asset
+    attributes:
+      label: Asset
+      placeholder: photo, signature, document
+  - type: textarea
+    id: change
+    attributes:
+      label: What is wrong or what changed
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Official source URL
+      description: Link to the notification or help page that states the new rule
+    validations:
+      required: true

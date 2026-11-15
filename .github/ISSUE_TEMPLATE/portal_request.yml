@@ -1,0 +1,21 @@
+name: Portal request
+description: Ask for a new portal or form to be added to the registry
+labels: [spec, enhancement]
+body:
+  - type: input
+    id: portal
+    attributes:
+      label: Portal and form name
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Official source URL with the upload rules
+    validations:
+      required: true
+  - type: textarea
+    id: rules
+    attributes:
+      label: Rules as published
+      description: Paste the photo, signature and document rules as the portal states them.
