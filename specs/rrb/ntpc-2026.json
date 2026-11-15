@@ -1,0 +1,100 @@
+{
+  "$schema": "../schema.json",
+  "id": "rrb/ntpc-2026",
+  "portal": "RRB",
+  "portalFullName": "Railway Recruitment Boards",
+  "form": "NTPC 2026",
+  "country": "IN",
+  "category": "exam",
+  "aliases": ["rrb ntpc", "railway", "rrb", "non technical popular categories"],
+  "sourceUrl": "https://www.rrbcdg.gov.in/",
+  "lastVerified": "2026-11-15",
+  "assets": [
+    {
+      "id": "photo",
+      "kind": "photo",
+      "label": "Photograph",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 30720,
+        "maxBytes": 71680
+      },
+      "pixels": {
+        "width": 138,
+        "height": 177,
+        "tolerance": 0.05
+      },
+      "physical": {
+        "widthMm": 35,
+        "heightMm": 45,
+        "dpi": 100
+      },
+      "dpi": 100,
+      "aspect": {
+        "ratio": 0.7778,
+        "tolerance": 0.05
+      },
+      "colour": "colour",
+      "face": {
+        "minHeightFraction": 0.5,
+        "maxHeightFraction": 0.85
+      },
+      "background": {
+        "kind": "light"
+      },
+      "notes": [
+        "Colour photo on a light background, taken within the last three months.",
+        "100 DPI as stated in the CEN."
+      ]
+    },
+    {
+      "id": "signature",
+      "kind": "signature",
+      "label": "Signature",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 30720,
+        "maxBytes": 71680
+      },
+      "pixels": {
+        "width": 197,
+        "height": 79,
+        "tolerance": 0.05
+      },
+      "physical": {
+        "widthMm": 50,
+        "heightMm": 20,
+        "dpi": 100
+      },
+      "dpi": 100,
+      "aspect": {
+        "ratio": 2.5,
+        "tolerance": 0.05
+      },
+      "background": {
+        "kind": "white"
+      },
+      "notes": ["Sign with black or dark blue ink on plain white paper."]
+    },
+    {
+      "id": "category-certificate",
+      "kind": "other",
+      "label": "Category certificate (SC/ST/OBC/EWS)",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 51200,
+        "maxBytes": 102400
+      },
+      "pixels": {
+        "width": 1240,
+        "height": 1754,
+        "tolerance": 0.5
+      },
+      "aspect": {
+        "ratio": 0.707,
+        "tolerance": 0.5
+      },
+      "notes": ["Scanned copy in JPEG, 50 to 100 KB."]
+    }
+  ]
+}

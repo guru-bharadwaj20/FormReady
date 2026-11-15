@@ -1,0 +1,82 @@
+{
+  "$schema": "../schema.json",
+  "id": "gate/gate-2026",
+  "portal": "GATE",
+  "portalFullName": "Graduate Aptitude Test in Engineering",
+  "form": "GATE 2026",
+  "country": "IN",
+  "category": "exam",
+  "aliases": ["gate", "iit gate", "goaps"],
+  "sourceUrl": "https://gate2026.iitg.ac.in/",
+  "lastVerified": "2026-11-15",
+  "season": "Aug-Sep",
+  "assets": [
+    {
+      "id": "photo",
+      "kind": "photo",
+      "label": "Photograph",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 5120,
+        "maxBytes": 204800
+      },
+      "pixels": {
+        "width": 360,
+        "height": 468,
+        "tolerance": 0.45
+      },
+      "aspect": {
+        "ratio": 0.7692,
+        "tolerance": 0.45
+      },
+      "face": {
+        "minHeightFraction": 0.5,
+        "maxHeightFraction": 0.85
+      },
+      "background": {
+        "kind": "white"
+      },
+      "notes": [
+        "Between 200 x 260 and 530 x 690 pixels, aspect 3.5:4.5.",
+        "Plain white or very light background, face 60 to 70 percent of the frame."
+      ]
+    },
+    {
+      "id": "signature",
+      "kind": "signature",
+      "label": "Signature",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 5120,
+        "maxBytes": 204800
+      },
+      "pixels": {
+        "width": 400,
+        "height": 130,
+        "tolerance": 0.4
+      },
+      "aspect": {
+        "ratio": 3.0769,
+        "tolerance": 0.4
+      },
+      "background": {
+        "kind": "white"
+      },
+      "notes": ["Between 250 x 80 and 580 x 180 pixels."]
+    },
+    {
+      "id": "category-certificate",
+      "kind": "document",
+      "label": "Category or PwD certificate",
+      "formats": ["pdf"],
+      "size": {
+        "minBytes": 10240,
+        "maxBytes": 307200
+      },
+      "pdf": {
+        "pageSize": "A4"
+      },
+      "notes": []
+    }
+  ]
+}

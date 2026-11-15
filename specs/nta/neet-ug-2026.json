@@ -1,0 +1,165 @@
+{
+  "$schema": "../schema.json",
+  "id": "nta/neet-ug-2026",
+  "portal": "NTA",
+  "portalFullName": "National Testing Agency",
+  "form": "NEET UG 2026",
+  "country": "IN",
+  "category": "exam",
+  "aliases": ["neet", "neet ug", "medical entrance", "nta neet"],
+  "sourceUrl": "https://neet.nta.nic.in/",
+  "lastVerified": "2026-11-15",
+  "season": "Feb-Mar",
+  "assets": [
+    {
+      "id": "photo",
+      "kind": "photo",
+      "label": "Photograph",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 10240,
+        "maxBytes": 204800
+      },
+      "pixels": {
+        "width": 276,
+        "height": 354,
+        "tolerance": 0.05
+      },
+      "physical": {
+        "widthMm": 35,
+        "heightMm": 45,
+        "dpi": 200
+      },
+      "dpi": 200,
+      "aspect": {
+        "ratio": 0.7778,
+        "tolerance": 0.05
+      },
+      "colour": "colour",
+      "face": {
+        "minHeightFraction": 0.5,
+        "maxHeightFraction": 0.85
+      },
+      "background": {
+        "kind": "white"
+      },
+      "notes": [
+        "Passport size photo with white background, 80 percent face visible, ears visible, no mask."
+      ]
+    },
+    {
+      "id": "postcard-photo",
+      "kind": "photo",
+      "label": "Postcard size photo (4 x 6 inch)",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 10240,
+        "maxBytes": 204800
+      },
+      "pixels": {
+        "width": 400,
+        "height": 600,
+        "tolerance": 0.05
+      },
+      "physical": {
+        "widthMm": 101.6,
+        "heightMm": 152.4,
+        "dpi": 100
+      },
+      "dpi": 100,
+      "aspect": {
+        "ratio": 0.6667,
+        "tolerance": 0.05
+      },
+      "colour": "colour",
+      "face": {
+        "minHeightFraction": 0.5,
+        "maxHeightFraction": 0.85
+      },
+      "background": {
+        "kind": "white"
+      },
+      "notes": []
+    },
+    {
+      "id": "signature",
+      "kind": "signature",
+      "label": "Signature",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 4096,
+        "maxBytes": 30720
+      },
+      "pixels": {
+        "width": 276,
+        "height": 118,
+        "tolerance": 0.05
+      },
+      "physical": {
+        "widthMm": 35,
+        "heightMm": 15,
+        "dpi": 200
+      },
+      "dpi": 200,
+      "aspect": {
+        "ratio": 2.3333,
+        "tolerance": 0.05
+      },
+      "background": {
+        "kind": "white"
+      },
+      "notes": ["Sign with black or dark blue ink on plain white paper."]
+    },
+    {
+      "id": "left-thumb",
+      "kind": "thumb",
+      "label": "Left hand thumb impression",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 10240,
+        "maxBytes": 204800
+      },
+      "pixels": {
+        "width": 350,
+        "height": 350,
+        "tolerance": 0.4
+      },
+      "aspect": {
+        "ratio": 1,
+        "tolerance": 0.4
+      },
+      "background": {
+        "kind": "white"
+      },
+      "notes": []
+    },
+    {
+      "id": "class10-certificate",
+      "kind": "document",
+      "label": "Class 10 certificate",
+      "formats": ["pdf"],
+      "size": {
+        "minBytes": 51200,
+        "maxBytes": 307200
+      },
+      "pdf": {
+        "pageSize": "A4"
+      },
+      "notes": []
+    },
+    {
+      "id": "category-certificate",
+      "kind": "document",
+      "label": "Category or PwBD certificate",
+      "formats": ["pdf"],
+      "size": {
+        "minBytes": 51200,
+        "maxBytes": 307200
+      },
+      "pdf": {
+        "pageSize": "A4"
+      },
+      "notes": []
+    }
+  ]
+}

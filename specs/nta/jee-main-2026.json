@@ -1,0 +1,108 @@
+{
+  "$schema": "../schema.json",
+  "id": "nta/jee-main-2026",
+  "portal": "NTA",
+  "portalFullName": "National Testing Agency",
+  "form": "JEE Main 2026",
+  "country": "IN",
+  "category": "exam",
+  "aliases": ["jee", "jee main", "engineering entrance", "nta jee"],
+  "sourceUrl": "https://jeemain.nta.nic.in/",
+  "lastVerified": "2026-11-15",
+  "season": "Nov and Feb",
+  "assets": [
+    {
+      "id": "photo",
+      "kind": "photo",
+      "label": "Photograph",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 10240,
+        "maxBytes": 307200
+      },
+      "pixels": {
+        "width": 276,
+        "height": 354,
+        "tolerance": 0.05
+      },
+      "physical": {
+        "widthMm": 35,
+        "heightMm": 45,
+        "dpi": 200
+      },
+      "dpi": 200,
+      "aspect": {
+        "ratio": 0.7778,
+        "tolerance": 0.05
+      },
+      "colour": "colour",
+      "face": {
+        "minHeightFraction": 0.5,
+        "maxHeightFraction": 0.85
+      },
+      "background": {
+        "kind": "white"
+      },
+      "notes": [
+        "Recent photo, coloured or black and white, 80 percent face visible including ears, white background."
+      ]
+    },
+    {
+      "id": "signature",
+      "kind": "signature",
+      "label": "Signature",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 4096,
+        "maxBytes": 30720
+      },
+      "pixels": {
+        "width": 276,
+        "height": 118,
+        "tolerance": 0.05
+      },
+      "physical": {
+        "widthMm": 35,
+        "heightMm": 15,
+        "dpi": 200
+      },
+      "dpi": 200,
+      "aspect": {
+        "ratio": 2.3333,
+        "tolerance": 0.05
+      },
+      "background": {
+        "kind": "white"
+      },
+      "notes": ["Sign with black or dark blue ink on plain white paper."]
+    },
+    {
+      "id": "category-certificate",
+      "kind": "document",
+      "label": "Category certificate",
+      "formats": ["pdf"],
+      "size": {
+        "minBytes": 51200,
+        "maxBytes": 307200
+      },
+      "pdf": {
+        "pageSize": "A4"
+      },
+      "notes": []
+    },
+    {
+      "id": "pwd-certificate",
+      "kind": "document",
+      "label": "PwD certificate",
+      "formats": ["pdf"],
+      "size": {
+        "minBytes": 51200,
+        "maxBytes": 307200
+      },
+      "pdf": {
+        "pageSize": "A4"
+      },
+      "notes": []
+    }
+  ]
+}

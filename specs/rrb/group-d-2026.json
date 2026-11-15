@@ -1,0 +1,77 @@
+{
+  "$schema": "../schema.json",
+  "id": "rrb/group-d-2026",
+  "portal": "RRB",
+  "portalFullName": "Railway Recruitment Boards",
+  "form": "Group D (Level 1) 2026",
+  "country": "IN",
+  "category": "exam",
+  "aliases": ["rrb group d", "railway group d", "rrc level 1"],
+  "sourceUrl": "https://www.rrbcdg.gov.in/",
+  "lastVerified": "2026-11-15",
+  "assets": [
+    {
+      "id": "photo",
+      "kind": "photo",
+      "label": "Photograph",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 30720,
+        "maxBytes": 71680
+      },
+      "pixels": {
+        "width": 138,
+        "height": 177,
+        "tolerance": 0.05
+      },
+      "physical": {
+        "widthMm": 35,
+        "heightMm": 45,
+        "dpi": 100
+      },
+      "dpi": 100,
+      "aspect": {
+        "ratio": 0.7778,
+        "tolerance": 0.05
+      },
+      "colour": "colour",
+      "face": {
+        "minHeightFraction": 0.5,
+        "maxHeightFraction": 0.85
+      },
+      "background": {
+        "kind": "light"
+      },
+      "notes": []
+    },
+    {
+      "id": "signature",
+      "kind": "signature",
+      "label": "Signature",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 30720,
+        "maxBytes": 71680
+      },
+      "pixels": {
+        "width": 197,
+        "height": 79,
+        "tolerance": 0.05
+      },
+      "physical": {
+        "widthMm": 50,
+        "heightMm": 20,
+        "dpi": 100
+      },
+      "dpi": 100,
+      "aspect": {
+        "ratio": 2.5,
+        "tolerance": 0.05
+      },
+      "background": {
+        "kind": "white"
+      },
+      "notes": ["Sign with black or dark blue ink on plain white paper."]
+    }
+  ]
+}

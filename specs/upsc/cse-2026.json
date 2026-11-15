@@ -1,0 +1,68 @@
+{
+  "$schema": "../schema.json",
+  "id": "upsc/cse-2026",
+  "portal": "UPSC",
+  "portalFullName": "Union Public Service Commission",
+  "form": "Civil Services 2026 (OTR)",
+  "country": "IN",
+  "category": "exam",
+  "aliases": ["upsc", "ias", "civil services", "upsc otr", "nda", "cds", "ies"],
+  "sourceUrl": "https://upsconline.nic.in/",
+  "lastVerified": "2026-11-15",
+  "season": "Feb-Mar",
+  "assets": [
+    {
+      "id": "photo",
+      "kind": "photo",
+      "label": "Photograph",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 20480,
+        "maxBytes": 307200
+      },
+      "pixels": {
+        "width": 600,
+        "height": 600,
+        "tolerance": 0.4
+      },
+      "aspect": {
+        "ratio": 1,
+        "tolerance": 0.4
+      },
+      "face": {
+        "minHeightFraction": 0.5,
+        "maxHeightFraction": 0.85
+      },
+      "background": {
+        "kind": "light"
+      },
+      "notes": [
+        "Between 350 x 350 and 1000 x 1000 pixels.",
+        "Photo must be taken within the last ten days and show your name and the date on a placard below the face."
+      ]
+    },
+    {
+      "id": "signature",
+      "kind": "signature",
+      "label": "Signature",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 20480,
+        "maxBytes": 307200
+      },
+      "pixels": {
+        "width": 600,
+        "height": 600,
+        "tolerance": 0.4
+      },
+      "aspect": {
+        "ratio": 1,
+        "tolerance": 0.4
+      },
+      "background": {
+        "kind": "white"
+      },
+      "notes": ["Between 350 x 350 and 1000 x 1000 pixels."]
+    }
+  ]
+}

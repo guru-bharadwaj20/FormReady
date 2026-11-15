@@ -1,0 +1,76 @@
+{
+  "$schema": "../schema.json",
+  "id": "iim/cat-2026",
+  "portal": "IIM CAT",
+  "portalFullName": "Indian Institutes of Management Common Admission Test",
+  "form": "CAT 2026",
+  "country": "IN",
+  "category": "exam",
+  "aliases": ["cat", "iim cat", "mba entrance"],
+  "sourceUrl": "https://iimcat.ac.in/",
+  "lastVerified": "2026-11-15",
+  "season": "Aug-Sep",
+  "assets": [
+    {
+      "id": "photo",
+      "kind": "photo",
+      "label": "Photograph",
+      "formats": ["jpeg"],
+      "size": {
+        "maxBytes": 81920
+      },
+      "pixels": {
+        "width": 236,
+        "height": 354,
+        "tolerance": 0.05
+      },
+      "physical": {
+        "widthMm": 30,
+        "heightMm": 45,
+        "dpi": 200
+      },
+      "dpi": 200,
+      "aspect": {
+        "ratio": 0.6667,
+        "tolerance": 0.05
+      },
+      "colour": "colour",
+      "face": {
+        "minHeightFraction": 0.5,
+        "maxHeightFraction": 0.85
+      },
+      "background": {
+        "kind": "light"
+      },
+      "notes": []
+    },
+    {
+      "id": "signature",
+      "kind": "signature",
+      "label": "Signature",
+      "formats": ["jpeg"],
+      "size": {
+        "maxBytes": 81920
+      },
+      "pixels": {
+        "width": 630,
+        "height": 276,
+        "tolerance": 0.05
+      },
+      "physical": {
+        "widthMm": 80,
+        "heightMm": 35,
+        "dpi": 200
+      },
+      "dpi": 200,
+      "aspect": {
+        "ratio": 2.2857,
+        "tolerance": 0.05
+      },
+      "background": {
+        "kind": "white"
+      },
+      "notes": ["Sign with black or dark blue ink on plain white paper."]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "$schema": "../schema.json",
+  "id": "ssc/cgl-2026",
+  "portal": "SSC",
+  "portalFullName": "Staff Selection Commission",
+  "form": "CGL 2026",
+  "country": "IN",
+  "category": "exam",
+  "aliases": ["ssc cgl", "combined graduate level", "ssc", "staff selection"],
+  "sourceUrl": "https://ssc.gov.in/",
+  "lastVerified": "2026-11-15",
+  "season": "Jun-Jul",
+  "assets": [
+    {
+      "id": "photo",
+      "kind": "photo",
+      "label": "Photograph",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 20480,
+        "maxBytes": 51200
+      },
+      "pixels": {
+        "width": 276,
+        "height": 354,
+        "tolerance": 0.05
+      },
+      "physical": {
+        "widthMm": 35,
+        "heightMm": 45,
+        "dpi": 200
+      },
+      "dpi": 200,
+      "aspect": {
+        "ratio": 0.7778,
+        "tolerance": 0.05
+      },
+      "colour": "colour",
+      "face": {
+        "minHeightFraction": 0.5,
+        "maxHeightFraction": 0.85
+      },
+      "background": {
+        "kind": "light"
+      },
+      "notes": [
+        "Recent colour photo, not older than three months, without cap or spectacles.",
+        "Photo should carry the date it was taken where the notice asks for it."
+      ]
+    },
+    {
+      "id": "signature",
+      "kind": "signature",
+      "label": "Signature",
+      "formats": ["jpeg"],
+      "size": {
+        "minBytes": 10240,
+        "maxBytes": 20480
+      },
+      "pixels": {
+        "width": 315,
+        "height": 157,
+        "tolerance": 0.05
+      },
+      "physical": {
+        "widthMm": 40,
+        "heightMm": 20,
+        "dpi": 200
+      },
+      "dpi": 200,
+      "aspect": {
+        "ratio": 2,
+        "tolerance": 0.05
+      },
+      "background": {
+        "kind": "white"
+      },
+      "notes": ["Sign with black or dark blue ink on plain white paper."]
+    }
+  ]
+}
