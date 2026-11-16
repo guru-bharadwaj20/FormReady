@@ -1,15 +1,234 @@
+/*
+ * FormReady design tokens and base styles.
+ * Warm paper surface, ink text, one saffron accent for primary actions and
+ * three semantic colours for check statuses. Respects light/dark and
+ * reduced-motion. No web fonts: the app must look the same offline.
+ */
+
 :root {
-  font-family:
-    system-ui,
-    -apple-system,
-    'Segoe UI',
-    Roboto,
-    'Noto Sans',
-    sans-serif;
+  --font-sans:
+    'Noto Sans', 'Segoe UI', system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+
+  --paper: #faf7f1;
+  --paper-2: #f1ece2;
+  --ink: #1e1b16;
+  --ink-2: #5a544a;
+  --ink-3: #8c8578;
+  --line: #ddd6c8;
+  --accent: #c2410c;
+  --accent-ink: #ffffff;
+  --accent-soft: #fde8d8;
+  --pass: #1f7a4d;
+  --pass-soft: #dcf2e5;
+  --fail: #b42318;
+  --fail-soft: #fde2df;
+  --warn: #9a6700;
+  --warn-soft: #fff1c9;
+  --skip: #6b6560;
+  --skip-soft: #ebe7df;
+  --focus: #1d4ed8;
+
+  --radius: 10px;
+  --radius-sm: 6px;
+  --shadow: 0 1px 2px rgb(30 27 22 / 0.06), 0 8px 24px -12px rgb(30 27 22 / 0.18);
+  --maxw: 72rem;
+
+  color-scheme: light dark;
+  font-family: var(--font-sans);
   line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #16140f;
+    --paper-2: #211e17;
+    --ink: #f0ebe1;
+    --ink-2: #b8b0a2;
+    --ink-3: #857d70;
+    --line: #35302a;
+    --accent: #f97316;
+    --accent-ink: #1e1b16;
+    --accent-soft: #3a2113;
+    --pass: #4ade80;
+    --pass-soft: #11301f;
+    --fail: #f87171;
+    --fail-soft: #3b1613;
+    --warn: #fbbf24;
+    --warn-soft: #3a2a07;
+    --skip: #a8a097;
+    --skip-soft: #2a2622;
+    --focus: #93c5fd;
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 8px 24px -12px rgb(0 0 0 / 0.6);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
 body {
   margin: 0;
   min-height: 100dvh;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100dvh;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  margin: 0 0 0.5em;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+h1 {
+  font-size: clamp(1.6rem, 1.2rem + 1.8vw, 2.4rem);
+}
+h2 {
+  font-size: 1.25rem;
+}
+h3 {
+  font-size: 1rem;
+}
+p {
+  margin: 0 0 1em;
+}
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+a:hover {
+  color: var(--accent);
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding: 0.55rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--paper-2);
+  color: var(--ink);
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    background 120ms ease,
+    transform 120ms ease;
+}
+.btn:hover {
+  background: var(--line);
+}
+.btn:active {
+  transform: translateY(1px);
+}
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+.btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 600;
+}
+.btn-primary:hover {
+  background: color-mix(in srgb, var(--accent) 88%, black);
+}
+.btn-ghost {
+  background: transparent;
+  border-color: transparent;
+}
+.btn-ghost:hover {
+  background: var(--paper-2);
+}
+
+.field {
+  display: block;
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--paper);
+  color: var(--ink);
+}
+.field::placeholder {
+  color: var(--ink-3);
+}
+
+.card {
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+}
+
+.muted {
+  color: var(--ink-2);
+}
+.mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
