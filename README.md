@@ -36,7 +36,6 @@ FormReady fixes the file in the browser. There is no server to upload to.
 | [Design decisions](#design-decisions)     | The tradeoffs, and why                   |
 | [Repository layout](#repository-layout)   | Where things live                        |
 | [Documentation](#documentation)           | Which file answers which question        |
-| [Contributing](#contributing)             | Specs, translations, code                |
 
 ---
 
@@ -235,7 +234,6 @@ is not perfect. A warning helps; a false rejection would stop someone applying.
 | _What must it do?_              | [docs/02-requirements.md](docs/02-requirements.md)           |
 | _How is it built?_              | [docs/03-architecture.md](docs/03-architecture.md)           |
 | _Why this choice?_              | [docs/adr/](docs/adr/)                                       |
-| _How do I add a portal?_        | [CONTRIBUTING.md](CONTRIBUTING.md)                           |
 | _What changed?_                 | [CHANGELOG.md](CHANGELOG.md)                                 |
 | _I found a vulnerability_       | [SECURITY.md](SECURITY.md)                                   |
 | _How should we behave?_         | [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)                     |
@@ -251,14 +249,6 @@ is not perfect. A warning helps; a false rejection would stop someone applying.
 > [spec change issue](https://github.com/guru-bharadwaj20/FormReady/issues/new?template=spec_change.yml).
 > If a portal is missing, use the
 > [portal request template](https://github.com/guru-bharadwaj20/FormReady/issues/new?template=portal_request.yml).
-
----
-
-## Contributing
-
-The most valuable contribution is a correct, sourced portal spec. Translations
-and code are welcome too. [CONTRIBUTING.md](CONTRIBUTING.md) explains the spec
-format and the checks a pull request must pass.
 
 ---
 
