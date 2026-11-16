@@ -18,11 +18,11 @@
 
   const LARGE_FILE = 12 * 1024 * 1024;
 
-  let spec = $state<PortalSpec | undefined>();
-  let asset = $state<AssetSpec | undefined>();
+  let spec = $state.raw<PortalSpec | undefined>();
+  let asset = $state.raw<AssetSpec | undefined>();
   let file = $state<File | undefined>();
-  let before = $state<Inspection | undefined>();
-  let after = $state<Fixed | undefined>();
+  let before = $state.raw<Inspection | undefined>();
+  let after = $state.raw<Fixed | undefined>();
   let busy = $state(false);
   let error = $state<string | undefined>();
   let notice = $state<string | undefined>();
