@@ -25,6 +25,14 @@ function haystacks(spec: PortalSpec): string[] {
     .filter(Boolean);
 }
 
+/** A token matches a word exactly, or as a prefix when it is 3+ chars long. */
+function wordMatch(words: Set<string>, token: string): boolean {
+  if (words.has(token)) return true;
+  if (token.length < 3) return false;
+  for (const w of words) if (w.startsWith(token)) return true;
+  return false;
+}
+
 /**
  * Ranks specs for a free-text query. Exact alias match beats prefix match
  * beats token containment. Empty query returns everything in registry order.
@@ -43,10 +51,10 @@ export function searchSpecs(all: readonly PortalSpec[], query: string, limit = 2
       else if (f.includes(q)) score = Math.max(score, 60);
     }
     if (score === 0) {
-      const joined = fields.join(' | ');
-      const matched = tokens.filter((t) => joined.includes(t)).length;
+      const words = new Set(fields.flatMap((f) => f.split(' ')));
+      const matched = tokens.filter((t) => wordMatch(words, t)).length;
       if (matched === tokens.length) score = 40;
-      else if (matched > 0) score = 10 * matched;
+      else if (matched > 0 && matched >= Math.ceil(tokens.length / 2)) score = 10 * matched;
     }
     if (score > 0) hits.push({ spec, score });
   }

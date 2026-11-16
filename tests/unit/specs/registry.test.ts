@@ -81,4 +81,11 @@ describe('searchSpecs', () => {
   it('returns nothing for garbage', () => {
     expect(searchSpecs(specs, 'zzqqxx')).toEqual([]);
   });
+  it('does not match stray short tokens inside unrelated words', () => {
+    expect(searchSpecs(specs, 'zzzz-no-such-portal')).toEqual([]);
+  });
+  it('matches a word prefix of three or more letters', () => {
+    const ids = searchSpecs(specs, 'rail').map((h) => h.spec.id);
+    expect(ids).toContain('rrb/ntpc-2026');
+  });
 });
