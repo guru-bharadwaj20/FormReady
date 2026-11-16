@@ -1,6 +1,6 @@
 {
   "name": "formready",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "description": "Free, offline, no-upload web app that makes your photo, signature and documents pass exam and government portal uploads on the first try.",
   "type": "module",
